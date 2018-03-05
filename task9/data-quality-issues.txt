@@ -1,0 +1,6 @@
+1. The vehicle_color attribute of the parking violations and open violations tablesi has many representation for the same color. For example, WHITE and WHT stats for WHITE.
+2.vehicle color and vehicle make are bit mixed up. For example - VOLKS and TOYOT occurs in color section while its actually a make.
+3.Few values of attributes contain ',' in them. Hence while we split the csv file into words, this will give rise to more words than the actual number of words/attributes in a row of csv file.
+4. Values for vehicle_color and vehicle_make are missing.
+5. There is a value =99 in state of registration column in parking violations which might correspond to missing value replaced with 99.
+6. Few other columns in parking violations like 4 and 8 contains maximum missing values. (missing values are more than available values).Its same with open-violations for column 8 and 9
